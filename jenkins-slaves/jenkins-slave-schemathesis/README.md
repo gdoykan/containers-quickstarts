@@ -1,5 +1,9 @@
-# jenkins-slave-python
-Provides a docker image of the python runtime for use as a Jenkins slave.
+# jenkins-slave-schemathesis
+Provides a docker image of the python runtime and schemathesis for use as a Jenkins slave.
+
+## What is Schemathesis?
+https://github.com/kiwicom/schemathesis <br/>
+*Description and explanation of why this is useful as a jenkins slave*
 
 ## Build local
 `docker build -t jenkins-slave-python .`
