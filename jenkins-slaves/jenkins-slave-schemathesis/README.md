@@ -5,11 +5,15 @@ Provides a docker image of the python runtime and schemathesis for use as a Jenk
 https://github.com/kiwicom/schemathesis <br/>
 *Description and explanation of why this is useful as a jenkins slave*
 
+"Schemathesis is a tool for testing your web applications built with Open API / Swagger specifications. It reads the application schema and generates test cases which will ensure that your application is compliant with its schema. The application under test could be written in any language, the only thing you need is a valid API schema in a supported format." - From the linked URL
+
+This Jenkins agent allows for an easy integration into a pipeline where you can insure that your backend is meeting what is defined in your API contact. Otherwise the build will fail and you will be left with a compliant backend.
+
 ## Build local
-`docker build -t jenkins-slave-python .`
+`docker build -t jenkins-slave-schemathesis .`
 
 ## Run local
-For local running and experimentation run `docker run -i -t jenkins-slave-python /bin/bash` and have a play once inside the container.
+For local running and experimentation run `docker run -i -t jenkins-slave-schemathesis /bin/bash` and have a play once inside the container.
 
 ## Build in OpenShift
 ```bash
